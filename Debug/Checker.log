@@ -1,0 +1,7 @@
+﻿  Source.cpp
+C:\Users\94-02\source\repos\Checker\Source.cpp(29,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\94-02\source\repos\Checker\Source.cpp(50,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\94-02\source\repos\Checker\Source.cpp(62,23): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\94-02\source\repos\Checker\Source.cpp(76,23): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\94-02\source\repos\Checker\Source.cpp(104,23): warning C4018: <: несоответствие типов со знаком и без знака
+LINK : fatal error LNK1104: не удается открыть файл "Aspose.Cells.lib"

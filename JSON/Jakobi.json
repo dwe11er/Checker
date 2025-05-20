@@ -1,0 +1,396 @@
+{
+    "Vertices": [
+        {
+            "Id": 1,
+            "Type": 0,
+            "Content": "Start"
+        },
+        {
+            "Id": 2,
+            "Type": 4,
+            "Content": "A[n,n]"
+        },
+        {
+            "Id": 3,
+            "Type": 4,
+            "Content": "B[n]"
+        },
+        {
+            "Id": 4,
+            "Type": 4,
+            "Content": "X0[n]"
+        },
+        {
+            "Id": 5,
+            "Type": 4,
+            "Content": "e"
+        },
+        {
+            "Id": 6,
+            "Type": 4,
+            "Content": "iterations"
+        },
+        {
+            "Id": 7,
+            "Type": 2,
+            "Content": "it=1"
+        },
+        {
+            "Id": 8,
+            "Type": 2,
+            "Content": "i=1"
+        },
+        {
+            "Id": 9,
+            "Type": 3,
+            "Content": "i<=n"
+        },
+        {
+            "Id": 10,
+            "Type": 2,
+            "Content": "X(i)=X0(i)"
+        },
+        {
+            "Id": 11,
+            "Type": 2,
+            "Content": "i=i+1"
+        },
+        {
+            "Id": 12,
+            "Type": 2,
+            "Content": "i=1"
+        },
+        {
+            "Id": 13,
+            "Type": 3,
+            "Content": "i<=n"
+        },
+        {
+            "Id": 14,
+            "Type": 2,
+            "Content": "newX(i)=B(i)"
+        },
+        {
+            "Id": 15,
+            "Type": 2,
+            "Content": "j=1"
+        },
+        {
+            "Id": 16,
+            "Type": 3,
+            "Content": "j<=n"
+        },
+        {
+            "Id": 17,
+            "Type": 3,
+            "Content": "i!=j"
+        },
+        {
+            "Id": 18,
+            "Type": 2,
+            "Content": "D=A(i,j)*X(j)"
+        },
+        {
+            "Id": 19,
+            "Type": 2,
+            "Content": "newX(i)=newX(i)-D"
+        },
+        {
+            "Id": 20,
+            "Type": 2,
+            "Content": "j=j+1"
+        },
+        {
+            "Id": 21,
+            "Type": 2,
+            "Content": "newX(i)=newX(i)/A(i,i)"
+        },
+        {
+            "Id": 22,
+            "Type": 2,
+            "Content": "i=i+1"
+        },
+        {
+            "Id": 23,
+            "Type": 2,
+            "Content": "i=1"
+        },
+        {
+            "Id": 24,
+            "Type": 2,
+            "Content": "D=X(i)-newX(i)"
+        },
+        {
+            "Id": 25,
+            "Type": 2,
+            "Content": "norm=abs(D)"
+        },
+        {
+            "Id": 26,
+            "Type": 2,
+            "Content": "X(i)=newX(i)"
+        },
+        {
+            "Id": 27,
+            "Type": 2,
+            "Content": "i=i+1"
+        },
+        {
+            "Id": 28,
+            "Type": 3,
+            "Content": "i<=n"
+        },
+        {
+            "Id": 29,
+            "Type": 2,
+            "Content": "D=X(i)-newX(i)"
+        },
+        {
+            "Id": 30,
+            "Type": 2,
+            "Content": "D=abs(D)"
+        },
+        {
+            "Id": 31,
+            "Type": 2,
+            "Content": "norm=norm+D"
+        },
+        {
+            "Id": 32,
+            "Type": 3,
+            "Content": "norm<e"
+        },
+        {
+            "Id": 33,
+            "Type": 2,
+            "Content": "it=it+1"
+        },
+        {
+            "Id": 34,
+            "Type": 3,
+            "Content": "it<=iterations"
+        },
+        {
+            "Id": 35,
+            "Type": 5,
+            "Content": "X[n]"
+        },
+        {
+            "Id": 36,
+            "Type": 1,
+            "Content": "End"
+        }
+    ],
+    "Edges": [
+        {
+            "From": 1,
+            "To": 2,
+            "Type": 2
+        },
+        {
+            "From": 2,
+            "To": 3,
+            "Type": 2
+        },
+        {
+            "From": 3,
+            "To": 4,
+            "Type": 2
+        },
+        {
+            "From": 4,
+            "To": 5,
+            "Type": 2
+        },
+        {
+            "From": 5,
+            "To": 6,
+            "Type": 2
+        },
+        {
+            "From": 6,
+            "To": 7,
+            "Type": 2
+        },
+        {
+            "From": 7,
+            "To": 8,
+            "Type": 2
+        },
+        {
+            "From": 8,
+            "To": 9,
+            "Type": 2
+        },
+        {
+            "From": 9,
+            "To": 10,
+            "Type": 1
+        },
+        {
+            "From": 9,
+            "To": 12,
+            "Type": 0
+        },
+        {
+            "From": 10,
+            "To": 11,
+            "Type": 2
+        },
+        {
+            "From": 11,
+            "To": 9,
+            "Type": 2
+        },
+        {
+            "From": 12,
+            "To": 13,
+            "Type": 2
+        },
+        {
+            "From": 13,
+            "To": 14,
+            "Type": 1
+        },
+        {
+            "From": 13,
+            "To": 23,
+            "Type": 0
+        },
+        {
+            "From": 14,
+            "To": 15,
+            "Type": 2
+        },
+        {
+            "From": 15,
+            "To": 16,
+            "Type": 2
+        },
+        {
+            "From": 16,
+            "To": 17,
+            "Type": 1
+        },
+        {
+            "From": 16,
+            "To": 21,
+            "Type": 0
+        },
+        {
+            "From": 17,
+            "To": 18,
+            "Type": 1
+        },
+        {
+            "From": 17,
+            "To": 20,
+            "Type": 0
+        },
+        {
+            "From": 18,
+            "To": 19,
+            "Type": 2
+        },
+        {
+            "From": 19,
+            "To": 20,
+            "Type": 2
+        },
+        {
+            "From": 20,
+            "To": 16,
+            "Type": 2
+        },
+        {
+            "From": 21,
+            "To": 22,
+            "Type": 2
+        },
+        {
+            "From": 22,
+            "To": 13,
+            "Type": 2
+        },
+        {
+            "From": 23,
+            "To": 24,
+            "Type": 2
+        },
+        {
+            "From": 24,
+            "To": 25,
+            "Type": 2
+        },
+        {
+            "From": 25,
+            "To": 26,
+            "Type": 2
+        },
+        {
+            "From": 26,
+            "To": 27,
+            "Type": 2
+        },
+        {
+            "From": 27,
+            "To": 28,
+            "Type": 2
+        },
+        {
+            "From": 28,
+            "To": 29,
+            "Type": 1
+        },
+        {
+            "From": 28,
+            "To": 32,
+            "Type": 0
+        },
+        {
+            "From": 29,
+            "To": 30,
+            "Type": 2
+        },
+        {
+            "From": 30,
+            "To": 31,
+            "Type": 2
+        },
+        {
+            "From": 31,
+            "To": 26,
+            "Type": 2
+        },
+        {
+            "From": 32,
+            "To": 35,
+            "Type": 1
+        },
+        {
+            "From": 32,
+            "To": 33,
+            "Type": 0
+        },
+        {
+            "From": 33,
+            "To": 34,
+            "Type": 2
+        },
+        {
+            "From": 34,
+            "To": 12,
+            "Type": 1
+        },
+        {
+            "From": 34,
+            "To": 35,
+            "Type": 0
+        },
+        {
+            "From": 35,
+            "To": 36,
+            "Type": 2
+        }
+    ]
+}
